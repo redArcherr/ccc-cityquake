@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "cc4f2ba3-1e6e-4b0d-8319-529c7492d6a3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "断层土壤": {
+      "ver": "1.0.3",
+      "uuid": "1a0dc27e-a0c1-4a59-a156-f210719f0157",
+      "rawTextureUuid": "cc4f2ba3-1e6e-4b0d-8319-529c7492d6a3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 837,
+      "height": 525,
+      "rawWidth": 837,
+      "rawHeight": 525,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

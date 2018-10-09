@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "2dd268f2-0480-4e4c-af8a-bc6e1088e541",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "坚硬的土壤": {
+      "ver": "1.0.3",
+      "uuid": "871c3f9e-39f7-4e28-bd8e-96ad18d0cc80",
+      "rawTextureUuid": "2dd268f2-0480-4e4c-af8a-bc6e1088e541",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 837,
+      "height": 525,
+      "rawWidth": 837,
+      "rawHeight": 525,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

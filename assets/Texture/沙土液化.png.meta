@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c7c9ecc0-9aba-46c0-8a54-72f0102ad5a6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "沙土液化": {
+      "ver": "1.0.3",
+      "uuid": "ca0e4aa9-d2cc-47ea-91ef-fa90049eb80f",
+      "rawTextureUuid": "c7c9ecc0-9aba-46c0-8a54-72f0102ad5a6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 837,
+      "height": 531,
+      "rawWidth": 837,
+      "rawHeight": 531,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

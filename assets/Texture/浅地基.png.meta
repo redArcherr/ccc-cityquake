@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "efbcfd04-2d0d-473e-b8fa-0f7ee591bcb6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "浅地基": {
+      "ver": "1.0.3",
+      "uuid": "1b28bdc1-769a-4b72-bdd8-cd54a6887495",
+      "rawTextureUuid": "efbcfd04-2d0d-473e-b8fa-0f7ee591bcb6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 1.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 450,
+      "height": 260,
+      "rawWidth": 451,
+      "rawHeight": 263,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

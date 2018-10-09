@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "55591b4f-101c-42ad-bb1f-d11ecb912d05",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "建筑小剪力墙": {
+      "ver": "1.0.3",
+      "uuid": "74b86e73-d391-4fa5-9b8d-66d840b021b2",
+      "rawTextureUuid": "55591b4f-101c-42ad-bb1f-d11ecb912d05",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 167,
+      "height": 223,
+      "rawWidth": 167,
+      "rawHeight": 223,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
