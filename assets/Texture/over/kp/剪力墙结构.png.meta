@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0a631624-4b13-4630-852d-b09cd83aa8c3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "剪力墙结构": {
+      "ver": "1.0.3",
+      "uuid": "e8cad611-adbc-455a-be54-5727f46ed82c",
+      "rawTextureUuid": "0a631624-4b13-4630-852d-b09cd83aa8c3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 33.5,
+      "offsetY": 26.5,
+      "trimX": 67,
+      "trimY": 129,
+      "width": 683,
+      "height": 1023,
+      "rawWidth": 750,
+      "rawHeight": 1334,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

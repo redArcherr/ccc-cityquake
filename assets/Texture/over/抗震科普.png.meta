@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "346947d3-f68d-449b-905e-ebf987000e7d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "抗震科普": {
+      "ver": "1.0.3",
+      "uuid": "858ba485-387d-4587-90eb-b7dedafa4bdb",
+      "rawTextureUuid": "346947d3-f68d-449b-905e-ebf987000e7d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 139,
+      "height": 34,
+      "rawWidth": 139,
+      "rawHeight": 36,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

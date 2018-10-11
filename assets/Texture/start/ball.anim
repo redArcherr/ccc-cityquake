@@ -1,0 +1,38 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ball",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8333333333333334,
+  "sample": 24,
+  "speed": 0.1,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            270,
+            597
+          ]
+        },
+        {
+          "frame": 0.4166666666666667,
+          "value": [
+            268,
+            561
+          ]
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": [
+            254,
+            591
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

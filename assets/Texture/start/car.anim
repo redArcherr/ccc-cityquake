@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "car",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.4166666666666667,
+  "sample": 24,
+  "speed": 0.13,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -410,
+            76
+          ],
+          "motionPath": []
+        },
+        {
+          "frame": 0.4166666666666667,
+          "value": [
+            451,
+            -412
+          ],
+          "motionPath": []
+        }
+      ]
+    }
+  },
+  "events": []
+}
