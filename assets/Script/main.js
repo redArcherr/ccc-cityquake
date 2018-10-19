@@ -18,19 +18,21 @@ cc.Class({
         xzSprite:cc.Node,//选址纹理
         djSprite:cc.Node,//地基纹理
         jzSprite:cc.Node,//建筑纹理
-        choseNode:cc.Node,
+        choseNode:cc.Node,//选择框
         btnNode:cc.Node,
         resultBtn:cc.Node,
-        shakeNode:cc.Node,
-        desPage:cc.Node,
+        shakeNode:cc.Node,//震动节点
+        desPage:cc.Node,//详情页
         spriteFrames:{
             default:[],
             type:cc.SpriteFrame
-        }
+        },
+        _choseHouse:-1
     },
 
     // use this for initialization
     onLoad: function () {
+        this._choseHouse=-1;//默认选择的房子，用于控制震后的图片状态
         this.gameState = "xz";//操作逻辑控制
         this.xz_scrollview.active=true;
         this.dj_scrollview.active=false;
@@ -45,7 +47,7 @@ cc.Class({
         this.btnNode.active=false;
         this.btnNode.getChildByName("3s_tips").active=false;//隐藏摇一摇提示
         this.shakeNode.active=false;
-        this.choseNode.x=1000;
+        //this.choseNode.x=1000;//选择框
         //注册接收数据
         global.event.on("shake",this.shakeResult.bind(this));
         //注册页
@@ -78,7 +80,7 @@ cc.Class({
         }
         //按钮和选择框消失
         this.btnNode.active=false;
-        this.choseNode.x=1000;
+        //this.choseNode.x=1000;
     },
     //选择元素
     groundClick:function(event,customData){
@@ -90,13 +92,14 @@ cc.Class({
             this.djSprite.getComponent(cc.Sprite).spriteFrame=this.spriteFrames[parseInt(customData)+3];
         }else if(this.gameState==="jz"){
             cc.log(6+customData);
+            this._choseHouse=parseInt(customData);//选择的哪个房子
             this.jzSprite.getComponent(cc.Sprite).spriteFrame=this.spriteFrames[parseInt(customData)+6];
         }
         //选择框位置
         let chosePos = this.node.convertToNodeSpaceAR(event.target.position);
-        this.choseNode.position = chosePos;
-        this.choseNode.x=this.choseNode.x+10;
-        this.choseNode.y=this.choseNode.y+10;
+        // this.choseNode.position = chosePos;
+        // this.choseNode.x=this.choseNode.x+10;
+        // this.choseNode.y=this.choseNode.y+10;
         //按钮出现
         this.btnNode.active=true;
     },
@@ -118,16 +121,22 @@ cc.Class({
             resultNode.getComponent("shake-level").openResult(0);
         }else if(data>=5 && data<9){
             resultNode.getComponent("shake-level").openResult(1);
+            this.changeHouseState(this._choseHouse,1);
         }else if(data>=9 && data<13){
             resultNode.getComponent("shake-level").openResult(2);
+            this.changeHouseState(this._choseHouse,1);
         }else if(data>=13 && data<17){
             resultNode.getComponent("shake-level").openResult(3);
+            this.changeHouseState(this._choseHouse,2);
         }else if(data>=17 && data<20){
             resultNode.getComponent("shake-level").openResult(4);
+            this.changeHouseState(this._choseHouse,2);
         }else if(data>=20 && data<22){
             resultNode.getComponent("shake-level").openResult(5);
+            this.changeHouseState(this._choseHouse,3);
         }else if(data>=22){
             resultNode.getComponent("shake-level").openResult(6);
+            this.changeHouseState(this._choseHouse,3);
         }
         if(this.shakeNode){
             this.shakeNode.getComponent("gravity").closeDev();
@@ -144,5 +153,16 @@ cc.Class({
     },
     closeDesPage:function(){
         this.desPage.active=false;
+    },
+    //房屋毁坏状态
+    changeHouseState:function(idx,state){
+        let jz=this.jzSprite;
+        cc.loader.loadRes("./"+idx+"-"+state, cc.SpriteFrame, function (err, spFrame) {
+            if(err){
+                cc.log(err);
+            }else{
+                jz.getComponent(cc.Sprite).spriteFrame = spFrame; 
+            }        
+        });
     }
 });

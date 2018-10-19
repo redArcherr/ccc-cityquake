@@ -18,6 +18,7 @@ cc.Class({
     onLoad () {
         cc.systemEvent.on(cc.SystemEvent.EventType.DEVICEMOTION, this.onDeviceMotionEvent, this);
         //cc.systemEvent.setAccelerometerEnabled(true);
+        //this.openDev();
     },
 
     openDev:function(){
@@ -33,7 +34,7 @@ cc.Class({
     onDeviceMotionEvent (event) {
         this._shakeX= Math.abs(event.acc.x*100)-Math.abs(this._lastX);
         this._shakeY= Math.abs(event.acc.y*100)-Math.abs(this._lastY);
-        if(Math.abs(this._shakeX)>70 || Math.abs(this._shakeY)>70){
+        if(Math.abs(this._shakeX)>30 || Math.abs(this._shakeY)>30){
             if(this._state){
                 this._count++;
             }
