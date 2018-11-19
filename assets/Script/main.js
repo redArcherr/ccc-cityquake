@@ -15,6 +15,9 @@ cc.Class({
             default:null,
             type:cc.Node
         },
+        bgm_click:cc.AudioClip,//点击音效
+        bgm_bulid:cc.AudioClip,//建造音效
+        bgm_shake:cc.AudioClip,//震动音效
         xzSprite:cc.Node,//选址纹理
         djSprite:cc.Node,//地基纹理
         jzSprite:cc.Node,//建筑纹理
@@ -77,10 +80,12 @@ cc.Class({
             let shakeAnim= shakeLogo.getComponent(cc.Animation);
             shakeAnim.play("shake");
             this.shakeNode.getComponent("gravity").openDev();
+            this.bgmEffect=cc.audioEngine.play(this.bgm_shake,false,1);
         }
         //按钮和选择框消失
         this.btnNode.active=false;
         //this.choseNode.x=1000;
+        this.bgmEffect=cc.audioEngine.play(this.bgm_bulid,false,1);
     },
     //选择元素
     groundClick:function(event,customData){
@@ -102,6 +107,7 @@ cc.Class({
         // this.choseNode.y=this.choseNode.y+10;
         //按钮出现
         this.btnNode.active=true;
+        this.bgmEffect=cc.audioEngine.play(this.bgm_click,false,1);
     },
     //取消按钮（暂时不用）
     cancelClick:function(){
