@@ -55,6 +55,7 @@ cc.Class({
         global.event.on("shake",this.shakeResult.bind(this));
         //注册页
         this.desPage.active=false;
+        global.equipment=this.equipment();    
     },
     //下一步按钮
     enterClick:function(){
@@ -124,24 +125,24 @@ cc.Class({
     shakeResult:function(data){
         let resultNode=cc.find("Canvas/resultNode");
         if(data<5){
-            resultNode.getComponent("shake-level").openResult(0);
+            resultNode.getComponent("shake-level").openResult(0,this._choseHouse);
         }else if(data>=5 && data<9){
-            resultNode.getComponent("shake-level").openResult(1);
+            resultNode.getComponent("shake-level").openResult(1,this._choseHouse);
             this.changeHouseState(this._choseHouse,1);
         }else if(data>=9 && data<13){
-            resultNode.getComponent("shake-level").openResult(2);
+            resultNode.getComponent("shake-level").openResult(2,this._choseHouse);
             this.changeHouseState(this._choseHouse,1);
         }else if(data>=13 && data<17){
-            resultNode.getComponent("shake-level").openResult(3);
+            resultNode.getComponent("shake-level").openResult(3,this._choseHouse);
             this.changeHouseState(this._choseHouse,2);
         }else if(data>=17 && data<20){
-            resultNode.getComponent("shake-level").openResult(4);
+            resultNode.getComponent("shake-level").openResult(4,this._choseHouse);
             this.changeHouseState(this._choseHouse,2);
         }else if(data>=20 && data<22){
-            resultNode.getComponent("shake-level").openResult(5);
+            resultNode.getComponent("shake-level").openResult(5,this._choseHouse);
             this.changeHouseState(this._choseHouse,3);
         }else if(data>=22){
-            resultNode.getComponent("shake-level").openResult(6);
+            resultNode.getComponent("shake-level").openResult(6,this._choseHouse);
             this.changeHouseState(this._choseHouse,3);
         }
         if(this.shakeNode){
@@ -170,5 +171,17 @@ cc.Class({
                 jz.getComponent(cc.Sprite).spriteFrame = spFrame; 
             }        
         });
+    },
+
+    equipment:function(){
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isAndroid) {
+            return "android";
+        }
+        if (isIOS) {
+            return "ios";
+        }
     }
 });

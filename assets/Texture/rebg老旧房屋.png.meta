@@ -1,0 +1,32 @@
+{
+  "ver": "2.3.0",
+  "uuid": "b90ab95d-6bc8-434b-9fcb-42d8c913ca5f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "platformSettings": {},
+  "subMetas": {
+    "rebg老旧房屋": {
+      "ver": "1.0.3",
+      "uuid": "e328cbd9-d5ff-440c-805d-52290e34be15",
+      "rawTextureUuid": "b90ab95d-6bc8-434b-9fcb-42d8c913ca5f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 566,
+      "height": 241,
+      "rawWidth": 566,
+      "rawHeight": 241,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

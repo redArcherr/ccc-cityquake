@@ -1,0 +1,32 @@
+{
+  "ver": "2.3.0",
+  "uuid": "21a1e7a1-2b33-4321-86eb-ca99e8617bf7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "platformSettings": {},
+  "subMetas": {
+    "rebg剪力墙结构": {
+      "ver": "1.0.3",
+      "uuid": "c32768bd-7a05-4806-999d-4e0359948128",
+      "rawTextureUuid": "21a1e7a1-2b33-4321-86eb-ca99e8617bf7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 566,
+      "height": 241,
+      "rawWidth": 566,
+      "rawHeight": 241,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

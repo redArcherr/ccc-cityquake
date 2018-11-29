@@ -1,0 +1,32 @@
+{
+  "ver": "2.3.0",
+  "uuid": "95d175ff-e235-4454-b424-7cdbe3cb0b00",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "platformSettings": {},
+  "subMetas": {
+    "rebg砖混结构": {
+      "ver": "1.0.3",
+      "uuid": "b8cb8515-a8c8-4e96-ab64-61b5bffc151a",
+      "rawTextureUuid": "95d175ff-e235-4454-b424-7cdbe3cb0b00",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 566,
+      "height": 241,
+      "rawWidth": 566,
+      "rawHeight": 241,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

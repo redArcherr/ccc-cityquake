@@ -12,7 +12,8 @@ cc.Class({
         _state:false,//5s开关
         _lastX:0,//上一阵角度x
         _lastY:0,//上一帧角度y
-        _count:0//计数
+        _count:0,//计数
+        _amplitude:10//振幅
     },
 
     onLoad () {
@@ -26,6 +27,13 @@ cc.Class({
         this._time=0;
         cc.systemEvent.setAccelerometerEnabled(true);
         this._state=true;
+        if(global.equipment=="ios"){
+            this._amplitude=40;
+            cc.log("我的设备："+global.equipment);
+        }else if(global.equipment=="android"){
+            this._amplitude=15;
+            cc.log("我的设备："+global.equipment);
+        }
     },
     closeDev:function(){
         cc.systemEvent.setAccelerometerEnabled(false);
@@ -34,7 +42,7 @@ cc.Class({
     onDeviceMotionEvent (event) {
         this._shakeX= Math.abs(event.acc.x*100)-Math.abs(this._lastX);
         this._shakeY= Math.abs(event.acc.y*100)-Math.abs(this._lastY);
-        if(Math.abs(this._shakeX)>30 || Math.abs(this._shakeY)>30){
+        if(Math.abs(this._shakeX)>this._amplitude || Math.abs(this._shakeY)>this._amplitude){
             if(this._state){
                 this._count++;
             }
@@ -71,7 +79,5 @@ cc.Class({
                 //this.result();
             }
         }
-        
     }
-
 });

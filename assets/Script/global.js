@@ -3,6 +3,7 @@ const global=global||{};
 global.event=EventListener({});
 global.gameState="start";//状态机
 global.isSuccess=false;//是否通关
+global.equipment="ios";
 global.share=function(score,name){
     var share_title="吉宝地心探险"+score;
     var share_desc="吉宝吉宝"+name;
