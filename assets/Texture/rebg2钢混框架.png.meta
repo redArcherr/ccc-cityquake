@@ -1,16 +1,16 @@
 {
   "ver": "2.3.0",
-  "uuid": "0131b0e7-7feb-4658-8ff2-a2e31ee0b4bd",
+  "uuid": "b1ce2355-0516-46a7-8815-92cdd001a2f1",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "platformSettings": {},
   "subMetas": {
-    "rebg钢混结构": {
+    "rebg2钢混框架": {
       "ver": "1.0.3",
-      "uuid": "87009ba8-d093-45a9-a0a3-d67fa805b290",
-      "rawTextureUuid": "0131b0e7-7feb-4658-8ff2-a2e31ee0b4bd",
+      "uuid": "65598067-8436-4b29-8db0-088399880085",
+      "rawTextureUuid": "b1ce2355-0516-46a7-8815-92cdd001a2f1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

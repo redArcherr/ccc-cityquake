@@ -1,16 +1,16 @@
 {
   "ver": "2.3.0",
-  "uuid": "22e0d439-cb92-4afd-8719-2185fab6c052",
+  "uuid": "8c9ff3d1-d8fa-4d88-9883-c6e2a35387b8",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "platformSettings": {},
   "subMetas": {
-    "rebg首层框架": {
+    "rebg2首层框架": {
       "ver": "1.0.3",
-      "uuid": "08e6de36-5c34-45b6-95ae-d84a46e4787d",
-      "rawTextureUuid": "22e0d439-cb92-4afd-8719-2185fab6c052",
+      "uuid": "4ca34ea2-51ed-4171-836b-f8263f48b35d",
+      "rawTextureUuid": "8c9ff3d1-d8fa-4d88-9883-c6e2a35387b8",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
