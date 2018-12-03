@@ -16,6 +16,14 @@ cc.Class({
         resultbg:{
             default:[],
             type:cc.SpriteFrame
+        },
+        textContent:{
+            default:null,
+            type:cc.Sprite
+        },
+        texts:{
+            default:[],
+            type:cc.SpriteFrame
         }
     },
 
@@ -55,18 +63,14 @@ cc.Class({
         this.node.active = false;
     },
     changeContent:function(house,level){
-        //内容替换
-        let content=cc.find("Canvas/resultContent/resultScroll/view/content/sprite");
-        //content.getComponent(Sprite).spriteFrame;
-        cc.loader.loadRes("./txt-"+house+"-"+level, cc.SpriteFrame, function (err, spFrame) {
-            if(err){
-                cc.log(err);
-            }else{
-                content.getComponent(cc.Sprite).spriteFrame = spFrame; 
-            }        
-        });
+        this.textContent.spriteFrame=this.texts[(level+house*6)-1];
+        //内容替换(动态加载资源，异步，不要这么用)
+        //let change="./txt-"+house+"-"+level;
+        // cc.loader.loadRes(change, cc.SpriteFrame, function (err, spFrame) {
+        //     text.spriteFrame = spFrame;     
+        // });   
     },
-
+    
     update(dt){
         if(this._ctrl){
             this._time +=dt;

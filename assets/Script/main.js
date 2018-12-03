@@ -164,13 +164,16 @@ cc.Class({
     //房屋毁坏状态
     changeHouseState:function(idx,state){
         let jz=this.jzSprite;
-        cc.loader.loadRes("./"+idx+"-"+state, cc.SpriteFrame, function (err, spFrame) {
-            if(err){
-                cc.log(err);
-            }else{
-                jz.getComponent(cc.Sprite).spriteFrame = spFrame; 
-            }        
-        });
+        if(jz){
+            cc.loader.loadRes("./"+idx+"-"+state, cc.SpriteFrame, function (err, spFrame) {
+                // if(err){
+                //     cc.log(err);
+                // }else{
+                //     jz.getComponent(cc.Sprite).spriteFrame = spFrame; 
+                // }  
+                jz.getComponent(cc.Sprite).spriteFrame = spFrame;      
+            });
+        }  
     },
 
     equipment:function(){
